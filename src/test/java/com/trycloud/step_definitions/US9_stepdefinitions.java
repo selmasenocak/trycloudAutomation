@@ -42,4 +42,12 @@ public class US9_stepdefinitions {
         System.out.println("actualText = " + actualText);
         System.out.println("expectedText = " + expectedText);
     }
+
+    @Given("user on the dashboard page")
+    public void userOnTheDashboardPage() {
+    }
+
+    @When("the user clicks the {string} module")
+    public void theUserClicksTheModule(String arg0) {
+    }
 }

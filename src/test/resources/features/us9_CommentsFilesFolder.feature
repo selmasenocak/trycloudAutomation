@@ -10,3 +10,4 @@ Feature: As a user, I should be able to write comments to files/folders.
     And user write a "comment" inside the input box
     And user click the submit button to post it
     Then Verify the "comment" is displayed in the comment section.
+
