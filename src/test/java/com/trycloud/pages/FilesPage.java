@@ -19,7 +19,7 @@ public class FilesPage {
     @FindBy(xpath = "//a[2]/span[@class='icon icon-more']")
     public WebElement actionIcon;
 
-    @FindBy(xpath = "//*[.='Details']")
+    @FindBy(xpath = "//span[.='Details']")
     public WebElement details;
 
 
@@ -32,13 +32,11 @@ public class FilesPage {
     @FindBy(xpath = "(//input[@type='submit'])[2]")
     public WebElement post;
 
-    @FindBy(xpath = "(//div[@class='message'])[2]")
+    @FindBy(xpath = "//div[.='muhtar']")
     public WebElement seePost;
 
     public void setMessage(String myMessage) {
         message.sendKeys(myMessage);
-
-
     }
 
     TalkModulePage talkModulePage = new TalkModulePage();

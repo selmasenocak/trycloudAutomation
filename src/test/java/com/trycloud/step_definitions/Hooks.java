@@ -15,6 +15,9 @@ public class Hooks {
             byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","failure_ss");
         }
-        Driver.closeDriver();
+      Driver.closeDriver();
     }
+
+
 }
+
