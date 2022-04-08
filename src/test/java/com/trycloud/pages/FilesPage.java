@@ -5,13 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class FilesPage {
     public  FilesPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
 
+    @FindBy(xpath = "//tbody//tr//td//input[@type='checkbox']/../..")
+    public List<WebElement> allCheckBoxes;
 
+    @FindBy(css = "label[for='select_all_files']")
+    public WebElement firstCheckBox;
 
     @FindBy(xpath = "(//li)[2]")
     public WebElement files;
